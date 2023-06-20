@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Profiles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/3f00815d7e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="w-9/12 mx-auto">
+        <form class="lg:w-9/12 mt-6 mx-auto">   
+        <label for="default-search" class="mb-2 text-sm font-medium  sr-only dark:text-white">Search</label>
+        <div class="relative">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </div>
+            <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm  border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Accounts" required>
+            <button id="searchTap" type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-green-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-blue-800">Search</button>
+        </div>
+        </form>
+    </header>
+    <main class="lg:w-9/12 m-2 lg:mx-auto flex flex-col-reverse lg:flex-row-reverse my-auto">
+        <section class="text-white pb-4 bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 rounded-lg my-10 mx-auto w-full">
+            <div>
+                <p id="sec-name" class="text-center font-semibold my-2 text-xl text-white">Repositories</p>
+                <!-- repos -->
+            <div class="">
+            <div class="mx-auto w-5/6 p-4 shadow-xl bg-white border border-gray-200 rounded-lg shadow-black sm:p-8 bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white dark:border-gray-700">
+                <div class="flex items-center justify-between mb-4">
+                    <h5 class="text-xl font-bold leading-none  ">Latest</h5>
+                <div id="viewAll">
+                    <h1 class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                        View all
+                    </h1>
+                </div>
+            </div>
+                <div class="flow-root h-80 my-auto overflow-y-auto">
+                        <ul id="reposi" role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                        </ul>
+                </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full ">
+            <!-- first image -->
+            <div class="bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 rounded-lg my-10 md:w-96 mx-auto  ">
+                <div id="imageContainer" class="w-44 lg:w-56 mx-auto pt-10"><img class="rounded-full  shadow-xl shadow-black" src="https://avatars.githubusercontent.com/u110384843?v=4" alt="">
+            </div>
+            <div>
+                <div class=" mt-6 mb-4 text-white w-2/4 py-2  mx-auto bg-opacity-50">
+                    <h1 id="name" class="text-center font-mono uppercase tracking-wider text-xl font-extrabold">name</h1>
+                </div>
+                <div class="text-gray-200 text-center font-semibold mb-4">
+                    <p id="followsContainer"><a href="" class="hover:text-blue-600"><i class="fa-solid fa-user "></i> Following <span id="folloingCount"></span></a> &nbsp; &nbsp; &nbsp;<a class="hover:text-blue-600"  href=""><i class="fa-solid fa-user-group"></i> Followers </a></p>
+                </div>
+                <div class="w-3/4 my-4 mx-auto text-center">
+                    <h1 id="email-and-fb"><i class="fa-solid fa-envelope"></i> <span id="mail" class="underline font-semibold"> example@gmail.com</span> <br> <i class="fa-brands fa-facebook"></i> <span class="underline font-semibold">exmple@gmail.com</span></h1>
+                </div>
+                <div class="w-1/2 pb-8 pt-4 mx-auto">
+                <div id="foll">
+                        <a href="">
+                            <div class="button hover:text-sky-400 lg:w-3/4 mx-auto text-center font-mono font-semibold rounded-lg shadow-xl shadow-black text-xl py-3 bg-gradient-to-l text-white border-2 border-black from-slate-900 via-purple-900 to-slate-900 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300">
+                                <i class="fa-brands fa-github text-2xl"></i> Follow
+                            </div>
+                        </a>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
